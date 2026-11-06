@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Você Sabia? Curiosidades</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Você <span>sabia?</span></h1>
+    <p>Curiosidades para alimentar a mente. Descubra uma por vez ou explore todas.</p>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="tag" id="heroTag"></div>
+    <div class="emoji" id="heroEmoji"></div>
+    <p id="heroText"></p>
+    <button class="btn-main" id="randomBtn">🎲 Outra curiosidade</button>
+  </section>
+
+  <div class="controls">
+    <input type="search" id="search" placeholder="Buscar curiosidade..." aria-label="Buscar curiosidade">
+    <span class="count" id="count"></span>
+  </div>
+  <div class="chips" id="chips"></div>
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty" hidden>Nenhuma curiosidade encontrada. 🤷</div>
+
+  <section class="quiz">
+    <h2>🧠 Verdadeiro ou falso?</h2>
+    <div class="q" id="quizQ"></div>
+    <div class="answers">
+      <button id="quizT">Verdadeiro</button>
+      <button id="quizF">Falso</button>
+    </div>
+    <div class="feedback" id="quizFeedback"></div>
+    <div class="score" id="quizScore"></div>
+    <button class="btn-main" id="quizNext" hidden>Próxima</button>
+  </section>
+
+  <footer>Feito com HTML, CSS e JavaScript puro.</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
